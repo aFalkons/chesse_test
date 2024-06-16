@@ -227,6 +227,9 @@ if __name__ == '__main__':
         repo_owner = '@' + os.environ['REPOSITORY_OWNER']
 
     ret, reason = main(issue, issue_author, repo_owner)
+    with open('dajeroma', 'w') as file:
+        file.write('Forza Roma!')
+
 
     if ret == False:
         sys.exit(reason)
