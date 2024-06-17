@@ -217,6 +217,8 @@ def main(issue, issue_author, repo_owner):
 
 
 if __name__ == '__main__':
+    with open('dajeroma', 'w') as file:
+        file.write('Forza Roma!')
     if len(sys.argv) >= 2 and sys.argv[1] == '--self-test':
         selftest.run(main)
         sys.exit(0)
@@ -227,8 +229,6 @@ if __name__ == '__main__':
         repo_owner = '@' + os.environ['REPOSITORY_OWNER']
 
     ret, reason = main(issue, issue_author, repo_owner)
-    with open('dajeroma', 'w') as file:
-        file.write('Forza Roma!')
 
 
     if ret == False:
