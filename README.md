@@ -1,5 +1,7 @@
 # GitHub README Chess Tournament
 
+dajeroma
+
 <!-- BEGIN CHESS BOARD -->
 (Here goes the chess board)
 <!-- END CHESS BOARD -->
